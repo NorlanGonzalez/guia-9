@@ -46,7 +46,9 @@ group :development, :test do
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
-
+  gem "rspec-rails"
+  gem "capybara"
+  gem "database_cleaner"
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 end
@@ -57,7 +59,5 @@ group :development do
 end
 
 group :development, :test do
-  gem "rspec-rails", "~> 3.7"
-  gem "capybara"
-  gem "database_cleaner"
+  
 end
